@@ -386,7 +386,7 @@
                     // Signed in
                     console.log('User signed in:', userCredential.user);
                     // Redirect to dashboard or home page
-                    window.location.href = '/ai dash.html';
+                    window.location.href = '/index.html';
                 })
                 .catch((error) => {
                     showError(error.message);
@@ -401,7 +401,7 @@
                 .then((result) => {
                     // Signed in with Google
                     console.log('Google sign-in success:', result.user);
-                    window.location.href = '/ai dash.html';
+                    window.location.href = '/index.html';
                 })
                 .catch((error) => {
                     showError(error.message);
