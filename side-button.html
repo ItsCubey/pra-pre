@@ -1,0 +1,48 @@
+<a href="report.html" class="side-button">
+  <span class="icon">⬅️</span>
+  <span class="text">Report</span>
+</a>
+
+<style>
+  .side-button {
+    position: fixed;
+    bottom: 20px;
+    right: 0;
+    background-color: #03A9F4;
+    color: white;
+    padding: 10px;
+    border-radius: 10px 0 0 10px;
+    font-family: sans-serif;
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    transition: width 0.3s ease, padding 0.3s ease;
+    overflow: hidden;
+    white-space: nowrap;
+    width: 40px;
+    z-index: 9999;
+  }
+
+  .side-button:hover {
+    width: 150px;
+    padding: 10px 20px;
+  }
+
+  .side-button .text {
+    margin-left: 10px;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+  }
+
+  .side-button:hover .text {
+    opacity: 1;
+  }
+
+  .side-button .icon {
+    font-size: 20px;
+  }
+
+  body {
+    margin: 0;
+  }
+</style>
