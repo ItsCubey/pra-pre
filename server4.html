@@ -65,6 +65,16 @@
     <iframe src="https://www.chatbase.co/chatbot-iframe/ReC9FOIqagkbeJmm4qDtK" frameborder="0"></iframe>
   </div>
 
+  <div id="side-button-placeholder"></div>
+
+  <script>
+    fetch("side-button.html")
+      .then(response => response.text())
+      .then(data => {
+        document.getElementById("side-button-placeholder").innerHTML = data;
+      });
+  </script>
+
   <script>
     const firebaseConfig = {
       apiKey: "AIzaSyAsfEb1fgTnqZ8KHsyguhb5zqaqOe4xsIs",
